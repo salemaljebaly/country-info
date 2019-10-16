@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="5dp"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingRight="3dp"
+    android:paddingLeft="3dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/close_dialog"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_close"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:id="@+id/show_country_map"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/google_maps"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentStart="true"/>
+    <ImageView
+        android:id="@+id/dialog_country_flag"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/dialog_country_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary_text"
+        android:textSize="14sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="Country : Libya"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:weightSum="10"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="5">
+
+                <TextView
+                    android:id="@+id/dialog_country_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/main_font_size"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="3"
+                    android:textAlignment="textStart"
+                    android:text="Calling code : 218"/>
+
+                <TextView
+                    android:id="@+id/dialog_country_region"
+                    android:layout_below="@+id/dialog_country_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/main_font_size"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="3"
+                    android:textAlignment="textStart"
+                    android:text="Calling code : 218"/>
+
+                <TextView
+                    android:id="@+id/dialog_country_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/main_font_size"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="3"
+                    android:text="Calling code : 218"/>
+
+                <TextView
+                    android:id="@+id/dialog_country_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/main_font_size"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="3"
+                    android:text="Calling code : 218"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="5">
+                <TextView
+                    android:id="@+id/dialog_country_capital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/main_font_size"
+                    android:textAlignment="textStart"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="2"
+                    android:text="Capital : Tripoli"/>
+                <TextView
+                    android:id="@+id/dialog_country_population"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/main_font_size"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="5dp"
+                    android:textAlignment="textStart"
+                    android:layout_weight="2"
+                    android:text="Capital : Tripoli"/>
+
+                <TextView
+                    android:id="@+id/dialog_country_iso_code"
+                    android:layout_below="@+id/dialog_country_capital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/main_font_size"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="5dp"
+                    android:textAlignment="textStart"
+                    android:layout_weight="2"
+                    android:text="Capital : Tripoli"/>
+                <TextView
+                    android:id="@+id/dialog_country_iso_native_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/main_font_size"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="5dp"
+                    android:textAlignment="textStart"
+                    android:layout_weight="2"
+                    android:text="Capital : Tripoli"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- start layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:background="@drawable/border">
+
+        <TextView
+            android:id="@+id/dialog_country_currencies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:textSize="11sp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center"
+            android:text="@string/currencies"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+
+            <TextView
+                android:id="@+id/dialog_country_currencies_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/main_font_size"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="4"
+                android:text="Name : "/>
+            <TextView
+                android:id="@+id/dialog_country_currencies_symbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/main_font_size"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="5dp"
+                android:textAlignment="textStart"
+                android:layout_weight="2"
+                android:text="Capital : Tripoli"/>
+        </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/border_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:layout_marginTop="5dp"
+            android:padding="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/main_font_size"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center"
+                android:text="Border countries"/>
+            <TextView
+                android:id="@+id/dialog_country_borders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/main_font_size"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:text="Capital : Tripoli"/>
+        </LinearLayout>
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/adUnitId" />
+    </LinearLayout>
+</RelativeLayout>
